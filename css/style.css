@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  src: url('../assets/fonts/neue-montreal-regular.woff') format('woff')
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font: 400 24px/32px "Neue Montreal", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: "liga" on,"clig" on,"dlig" off;
+  text-rendering: optimizeSpeed;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    width: 1170px;
+  }
+}
+@media (min-width: 1300px) {
+  body {
+    width: 1240px;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 24px;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 72px;
+    letter-spacing: -2px;
+    line-height: 80px;
+    margin-bottom: 32px;
+  }
+}
+
+header p {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 32px;
+  margin: 40px 0 80px 0;
+}
+
+header div {
+  grid-column: 2 / span 6;
+  grid-gap: 32px;
+}
+
+.about {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .about-desc {
+    column-fill: balance;
+    column-count: 3;
+    column-gap: 40px;
+  }
+  .about-desc p {
+    margin: 0;
+  }
+}
+
+.work {
+  margin-bottom: 80px;
+}
+
+.work li:nth-child(even) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .work ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 16px;
+  }
+  .work li:nth-child(even) {
+    grid-column: 2 / span 7;
+    margin: 0;
+  }
+}
+
+.snapshot {
+  margin-bottom: 80px;
+}
+
+.snapshot ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.clients {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+  .clients div:first-child {
+    grid-column: 1 / span 2;
+  }
+}
+
+footer {
+  margin-bottom: 80px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer div {
+  margin-bottom: 24px;
+}
+
+footer div:last-child {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+  footer div {
+    margin: 0;
+  }
+  footer div:first-child {
+    grid-column: 1 / span 2;
+  }
+}
