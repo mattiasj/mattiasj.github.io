@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Neue Montreal';
   font-weight: 400;
-  src: url('../assets/fonts/neue-montreal-regular.woff') format('woff')
+  src: url('../assets/fonts/neuemontreal-regular.woff') format('woff')
 }
 
 * {
@@ -143,7 +143,7 @@ header {
 }
 
 header div {
-  grid-column: 2 / span 6;
+  grid-column: 2 / span 10;
   grid-gap: 32px;
 }
 
@@ -166,20 +166,14 @@ header div {
   margin-bottom: 80px;
 }
 
-.work li:nth-child(even) {
-  margin-bottom: 16px;
+.work ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 16px;
 }
-
-@media (min-width: 768px) {
-  .work ul {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 16px;
-  }
-  .work li:nth-child(even) {
-    grid-column: 2 / span 7;
-    margin: 0;
-  }
+.work li:nth-child(even) {
+  grid-column: 2 / span 7;
+  margin: 0;
 }
 
 .snapshot {
