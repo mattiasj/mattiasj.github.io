@@ -126,7 +126,7 @@ h3 {
 
 header p {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 22px;
   margin: 0;
 }
 
@@ -187,6 +187,9 @@ header div {
 @media (min-width: 1024px) {
   .snapshot ul {
     grid-template-columns: 1fr 1fr;
+  }
+  .snapshot li {
+    align-self: center;
   }
 }
 
