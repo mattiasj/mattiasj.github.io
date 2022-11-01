@@ -181,8 +181,13 @@ header div {
 
 .snapshot ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .snapshot ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .clients {
