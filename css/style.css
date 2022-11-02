@@ -22,7 +22,7 @@ html {
 body {
   background: #fff5ee;
   color: #333;
-  font: 400 24px/32px "Neue Montreal", sans-serif;
+  font: 400 28px/36px "Neue Montreal", sans-serif;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
@@ -120,7 +120,7 @@ h3 {
     font-size: 72px;
     letter-spacing: -2px;
     line-height: 80px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
   }
 }
 
@@ -140,14 +140,20 @@ header {
 .about {
   margin-bottom: 80px;
 }
+.about li {
+  margin-bottom: 24px;
+}
+.about li:last-child {
+  margin: 0;
+}
 
-@media (min-width: 768px) {
-  .about-desc {
-    column-fill: balance;
-    column-count: 3;
-    column-gap: 40px;
+@media (min-width: 1024px) {
+  .about ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 72px;
   }
-  .about-desc p {
+  .about li {
     margin: 0;
   }
 }
